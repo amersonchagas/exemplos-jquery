@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+
+  <input id="input" value='batata'>
+   
+    <button id="botao"   >Clique aqui</button>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(document).ready(function(){
+      $("#botao").click(function(){
+        //resgatando o value do input
+        alert( $("#input").val());
+        
+        //alterando o value do input
+        $("#input").val("JOAO");
+
+        
+      });
+    });
+    </script> 
+
+</body>
+</html>

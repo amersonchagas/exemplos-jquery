@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<body>
+
+    <div id="texto" style="width:300px; height:400px;"></div>
+    <button id="botao" >Clique aqui</button>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(document).ready(function(){
+      $("#botao").click(function(){
+        $("#texto").load("arquivo.html");
+      });
+    });
+    </script> 
+
+</body>
+</html>

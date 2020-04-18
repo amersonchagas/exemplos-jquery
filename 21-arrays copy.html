@@ -1,0 +1,34 @@
+<html>
+<head></head>
+<body>
+
+<ul id="lista"></ul>
+   
+    <button id="botao"   >Clique aqui</button>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(document).ready(function(){
+      $("#botao").click(function(){
+        var pessoas = ["Joao", "Jose", "Maria", "Antonio"];
+
+        $.each(pessoas, function(index, item) {
+           $("#lista").append("<li>"+item+"</li>");
+        });    
+      });
+    });
+    </script> 
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+
+<ul id="lista">
+  <li>Item 01</li>
+  <li>Item 02</li>
+  <li>Item 03</li>
+  <li>Item 04</li>
+  <li>Item 05</li>
+</ul>
+   
+    <button id="botao"   >Clique aqui</button>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(document).ready(function(){
+      $("#botao").click(function(){
+        $("#lista li").each(function (index, item) {
+          alert($(this).text());
+        });        
+      });
+    });
+    </script> 
+
+</body>
+</html>
+
+
+

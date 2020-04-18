@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+
+  <select id='estados'>
+    <option value='AP'> Amapa </option>
+    <option value='SP'> Sao Paulo</option>
+    <option value='RJ'> Rio de Janeiro</option>
+  </select>
+    
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+      $(document).ready(function(){
+        $("#estados").change(function(){
+          var estado = $("#estados").val();
+          alert(estado);
+
+        });
+      });
+      </script>
+
+</body>
+</html>

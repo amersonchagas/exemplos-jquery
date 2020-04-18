@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+
+  <input width='100px' id="input">
+  <input type='checkbox'>
+   
+    <button  id="botao"   >Clique aqui</button>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(document).ready(function(){
+      $("#botao").click(function(){
+        $("#input").attr("size", "50");
+        $("#input").attr("placeholder", "teste");
+        $("#input").attr("required", "required");
+        $('input[type="checkbox"]').attr("checked", "checked");
+        
+        //retornando os valores do attr
+        alert($("#input").attr("width"));
+      });
+    });
+    </script> 
+
+</body>
+</html>

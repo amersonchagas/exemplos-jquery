@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+
+  <button id="botao_animar" >Aperte o Botao</button>
+  <div id='box' style='position:absolute; width:200px; height:100px; background:red;'></div>
+    
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+      $(document).ready(function(){
+        $("#botao_animar").click(function(){
+          $("#box").animate(
+            {
+              left: "+=50",
+              top: "+=50",
+              opacity: "0.4"
+            }
+
+          );
+        });
+      });
+      </script>
+
+</body>
+</html>

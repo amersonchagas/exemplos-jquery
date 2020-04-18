@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+
+    <div id='box' style='display:none; width:200px; height:100px; background:red;'> O Texto que vai aparecer! </div>
+    <button id="botao_mostrar" >Botao Mostrar</button>
+    <button id="botao_sumir" >Botao Sumir</button>
+    <button id="botao_toggle" >Botao Toggle</button>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(document).ready(function(){
+      $("#botao_mostrar").click(function(){
+        $("#box").show();
+      });
+      $("#botao_sumir").click(function(){
+        $("#box").hide();
+      });
+
+      $("#botao_toggle").click(function(){
+        $("#box").toggle();
+      });
+    });
+    </script> 
+
+</body>
+</html>

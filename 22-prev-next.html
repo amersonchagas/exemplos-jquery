@@ -1,0 +1,41 @@
+<html>
+<head></head>
+<body>
+
+<ul id="lista">
+  <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li class='item3'>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+  </ul>
+
+</ul>
+   
+    <button id="botao"   >Clique aqui</button>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+
+    <script> 
+    $(document).ready(function(){
+      $("#botao").click(function(){        
+        $( "li.item3" ).css( "background-color", "red" );  
+        $( "li.item3" ).prev().css( "background-color", "green" );  
+        $( "li.item3" ).next().css( "background-color", "blue" );  
+      });
+    });
+    </script> 
+
+</body>
+</html>
+
+
+
+
+
